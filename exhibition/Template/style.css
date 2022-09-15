@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+body{
+   margin: 0;
+   max-height: 100%;
+   height: 100%;
+   overflow: hidden;
+   background-color: #231F20;
+   background-color: #3b3b3b;
+   background-position: center center;
+   /*background-size: cover;*/
+   background-repeat: no-repeat;
+   position: relative;
+   width: 100%;
+   -webkit-tap-highlight-color: transparent;
+   font-family: 'Open Sans', sans-serif;
+}
+
+body.Dark{
+   color:black;
+}
+body.Light{
+   color:black;  
+}
+#main-container{
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+#main-container.fill-window{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+#app-container, #unity-canvas{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   position: relative;
+}
+
+.loader{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   position: absolute;
+   display: block;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   text-align: center;
+}
+.container{
+   width: 80%;
+   max-width: 800px;
+   margin:0 auto;
+   text-align: center;
+   padding-top: 20px;
+}
+.logo{
+   width: auto;
+   max-width: 80%;
+   margin: 30px auto;
+   max-height: 150px;
+}
+
+.progressbar{
+   padding: 1px;
+   left: 0;
+   border: 1px solid #333;
+   border-radius: 10px;
+}
+.Dark .progressbar{
+   border: 1px solid white;
+}
+.fill{
+   height:6px;
+   background: #333;
+   display: block;
+   border-radius: 10px;
+   transition-property: width;
+   transition-duration: 1s;
+}
+.Dark .fill{
+   background: white;
+}
+.center {
+   overflow: hidden;
+   margin: 20px auto 0;
+   padding: 20px;
+   
+}
+.footer-cont{
+   position:fixed;
+   bottom:0;
+   left:0;
+   right:0;
+   text-align: center;
+   color: #808080;
+}
+h1{
+   padding-bottom: 10px;
+   border-bottom: 1px solid #333;
+}
+
+.Dark h1{
+   border-bottom: 1px solid white;
+}
+
+.logo-cont, .title-cont{
+   float:left;
+   display: block;
+}
+.logo-cont{
+   width: 25%;
+}
+.title-cont{
+   width: 70%;
+   margin-left: 2%;
+}
+.button{
+   width:50px;
+   height: 50px;
+   text-align: center;
+   cursor: pointer;
+}
+.floattopRight {
+   display: block;
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+.floatbottomLeft {
+   display: block;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+}
+span.imgbutton{
+   width: 100%;
+   height: 100%;
+   display: block;
+   position: relative;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.fullscreenON .imgbutton{
+   background-image: url("fullscreenON.png") ;
+}
+.fullscreenOFF .imgbutton{
+   background-image: url("fullscreenOFF.png") ;
+}
